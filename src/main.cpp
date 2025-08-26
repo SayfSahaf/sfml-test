@@ -14,8 +14,14 @@ int main()
                 window.close();
             }
         }
+        
+        sf::CircleShape c1(50.0f);
+        c1.setFillColor(sf::Color(100, 50, 170));
 
-        window.clear();
+        window.clear(sf::Color::White);
+        window.draw(
+            c1
+        );
         window.display();
     }
 }
